@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OfficeCorp - Professional Enterprise Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Load crisp social brand icon vectors -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 flex flex-col min-h-screen">
+
+  <!-- TOP LAYOUT BAR MODULE -->
+  <nav class="bg-slate-900/95 backdrop-blur text-white px-8 py-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <div class="text-2xl font-black tracking-tight text-blue-500">
+      <a href="index.html">Office<span class="text-white">Corp</span></a>
+    </div>
+    
+    <div class="hidden md:flex gap-8 items-center font-semibold text-sm tracking-wide">
+      <a href="index.html" class="text-blue-400 hover:text-blue-300 transition-colors">Home</a>
+      
+      <!-- Services Navigation Node -->
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-blue-400 transition-colors focus:outline-none py-2">
+          Services Provided <span>▼</span>
+        </button>
+        <div class="absolute top-full left-0 mt-1 w-56 bg-white text-slate-800 rounded-lg shadow-xl border border-gray-100 overflow-hidden py-1 invisible group-hover:visible transition-all duration-150">
+          <a href="#" class="block px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-600 transition-colors">Website Building & Architecture</a>
+          <a href="#" class="block px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-600 transition-colors">Testing Your Webpages & QA</a>
+          <a href="#" class="block px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-600 transition-colors">Cloud Database Integration</a>
+        </div>
+      </div>
+
+      <!-- Careers Navigation Node -->
+      <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-blue-400 transition-colors focus:outline-none py-2">
+          Careers <span>▼</span>
+        </button>
+        <div class="absolute top-full left-0 mt-1 w-48 bg-white text-slate-800 rounded-lg shadow-xl border border-gray-100 overflow-hidden py-1 invisible group-hover:visible transition-all duration-150">
+          <a href="dashboard.html" class="block px-4 py-2.5 text-sm hover:bg-blue-50 hover:text-blue-600 font-semibold transition-colors">Jobs Openings</a>
+        </div>
+      </div>
+
+      <!-- Interactive About Us Toggle Button -->
+      <button onclick="toggleAboutModal(true)" class="hover:text-blue-400 transition-colors focus:outline-none font-semibold text-sm tracking-wide">About Us</button>
+    </div>
+
+    <!-- Right Interaction Authentication Action Blocks -->
+    <div class="flex gap-4 items-center" id="authZone">
+      <a href="login.html" class="text-sm font-bold tracking-wide border border-gray-500 rounded-lg px-4 py-2 hover:bg-white hover:text-slate-950 transition-all">Login</a>
+      <a href="signup.html" class="text-sm font-bold tracking-wide bg-blue-600 rounded-lg px-4 py-2 hover:bg-blue-700 transition-all shadow-md">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- CENTER VIEWPORT PROFILE CONTAINER MATRICES -->
+  <main class="flex-grow max-w-5xl w-full mx-auto py-12 px-6 space-y-16">
+    
+    <!-- Profile Visual Architecture Block Section -->
+    <section class="bg-white border border-gray-200 rounded-2xl p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center gap-10">
+      <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-md border-4 border-white ring-4 ring-blue-500/20 flex-shrink-0">
+        <!-- Renders crisp professional representation avatar portrait -->
+        <img src="unsplash.com" alt="Parikshith Shivaprakash Portfolio Portrait" class="w-full h-full object-cover">
+      </div>
+      
+      <div class="space-y-4 text-center md:text-left">
+        <span class="bg-blue-50 text-blue-600 font-extrabold text-xs tracking-widest uppercase px-3 py-1 rounded-full border border-blue-100 inline-block">
+          Founder & Principal Engineer
+        </span>
+        <h1 class="text-4xl font-black text-slate-900 tracking-tight">Parikshith Shivaprakash</h1>
+        <p class="text-lg text-slate-600 leading-relaxed font-medium">
+          I hold a BE in CS alongside an MBA completed here in Berlin, Germany. Combining 2 years and 10 months of software engineering experience, my operational focus centers on deploying scalable application infrastructures and validating modern web performance matrices.
+        </p>
+        <div class="pt-2 flex justify-center md:justify-start gap-4">
+          <a href="dashboard.html" class="bg-slate-900 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-xl hover:bg-blue-600 transition-all shadow-md">View Corporate Jobs Dashboard</a>
+          <a href="#skills" class="bg-gray-100 text-slate-700 font-bold text-sm tracking-wide px-6 py-3 rounded-xl hover:bg-gray-200 transition-all">Explore Core Technical Skills</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Skills Visualization Grid Segment -->
+    <section id="skills" class="space-y-6">
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl font-black text-slate-900 tracking-tight">Core Architectural Expertise</h2>
+        <p class="text-sm text-slate-500 mt-1">Technical skill metrics managed and leveraged globally inside corporate networks.</p>
+      </div>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-blue-500 text-3xl mb-3"><i class="fa-solid fa-code"></i></div>
+          <h3 class="font-bold text-slate-900 text-lg mb-1">Website Building</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Developing production-ready, clean responsive applications leveraging Tailwind framework pipelines and semantic models.</p>
+        </div>
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-green-500 text-3xl mb-3"><i class="fa-solid fa-vial-circle-check"></i></div>
+          <h3 class="font-bold text-slate-900 text-lg mb-1">Testing Your Webpages</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Configuring systemic execution tracking loops, integration scripts, and automated quality parameters checks.</p>
+        </div>
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-purple-500 text-3xl mb-3"><i class="fa-solid fa-database"></i></div>
+          <h3 class="font-bold text-slate-900 text-lg mb-1">Backend Infrastructures</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Constructing REST API routers on top of Node.js cluster systems synchronized with persistent MongoDB cloud backends.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- INTERACTIVE ABOUT US MODAL COMPONENT CONTAINER -->
+  <div id="aboutModal" class="hidden fixed inset-0 bg-slate-950/65 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-all duration-300">
+    <div class="bg-white border border-gray-100 max-w-lg w-full rounded-2xl p-8 shadow-2xl relative transform transition-all duration-300 scale-100 space-y-6">
+      
+      <!-- Close Window Button Node -->
+      <button onclick="toggleAboutModal(false)" class="absolute top-4 right-4 w-8 h-8 bg-gray-50 hover:bg-gray-100 text-slate-400 hover:text-slate-600 rounded-full flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="space-y-4">
+        <span class="bg-blue-50 text-blue-600 font-extrabold text-xs tracking-widest uppercase px-3 py-1 rounded-full border border-blue-100 inline-block">
+          Corporate Ownership Profile
+        </span>
+        <h2 class="text-3xl font-black text-slate-900 tracking-tight">Parikshith Shivaprakash</h2>
+        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+          <i class="fa-solid fa-graduation-cap text-blue-500"></i> BE in CS &bull; MBA Graduate (Berlin)
+        </p>
+      </div>
+
+      <div class="border-t border-b border-gray-100 py-4 space-y-3 text-slate-600 text-sm leading-relaxed font-medium">
+        <p>
+          The enterprise operates under the technical direction of <strong class="text-slate-900">Parikshith Shivaprakash</strong>, combining solid technical system architectures with business operational mastery.
+        </p>
+        <p>
+          Parikshith holds a <strong class="text-slate-900">Bachelor of Engineering in Computer Science (BE CS)</strong> and graduated with an <strong class="text-slate-900">MBA degree from Berlin, Germany</strong>.
+        </p>
+        <p>
+          With <strong class="text-blue-600">2 years and 10 months of experience as a Software Engineer</strong>, he excels in managing distributed platform workflows, structural backend coding logic, and automated interface rendering patterns.
+        </p>
+      </div>
+
+      <div class="flex justify-end pt-2">
+        <button onclick="toggleAboutModal(false)" class="bg-slate-900 text-white font-bold text-xs tracking-wide px-5 py-2.5 rounded-xl hover:bg-blue-600 transition-colors shadow-md">
+          Close Profile Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HIGH-END BRAND ELEMENT FOOTER CONTAINER MODULE -->
+  <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 pt-12 pb-8 px-8 mt-auto">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-slate-800 pb-8 mb-6">
+      <div class="space-y-3">
+        <h3 class="text-white font-black text-xl tracking-tight">
+          <i class="fa-solid fa-building text-blue-500 mr-2"></i>Contact Us
+        </h3>
+        <p class="text-sm text-slate-400 font-medium leading-relaxed">
+          Klutzer Str. 37,<br>
+          13059 Berlin,<br>
+          Germany
+        </p>
+      </div>
+      
+      <!-- Brand Connection Node Cluster Configurations -->
+      <div class="space-y-3">
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider text-right md:text-left">Connect with Profiles Networks</h4>
+        <div class="flex gap-4 text-xl">
+          <a href="https://linkedin.com" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all shadow"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://youtube.com" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-red-600 hover:text-white transition-all shadow"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://github.com" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-slate-950 hover:text-white transition-all shadow"><i class="fa-brands fa-github"></i></a>
+          <a href="https://whatsapp.com" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-green-500 hover:text-white transition-all shadow"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com" target="_blank" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all shadow"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between text-xs text-slate-500 font-medium font-mono">
+      <p>&copy; 2026 OfficeCorp Systems Operations Ltd. Owned by Parikshith Shivaprakash.</p>
+      <p>Direct Office Pipeline: <a href="mailto:info@officecorp.com" class="text-blue-400 hover:underline">info@officecorp.com</a></p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT CONTROL INTERFACES -->
+  <script>
+    // Validation loop inspecting profile state storage
+    const activeSession = localStorage.getItem('officeUser');
+    if (activeSession) {
+      const parsedUser = JSON.parse(activeSession);
+      document.getElementById('authZone').innerHTML = `
+        <span class="text-sm font-semibold bg-slate-800 border border-slate-700 rounded-xl px-4 py-2 block text-blue-400">
+          <i class="fa-solid fa-user-circle mr-2 text-white"></i>\${parsedUser.fullName}
+        </span>
+        <button onclick="localStorage.clear(); window.location.reload();" class="text-xs font-bold text-red-400 hover:underline">Logout</button>
+      `;
+    }
+
+    // Controls display rendering values for About Modal
+    function toggleAboutModal(show) {
+      const modal = document.getElementById('aboutModal');
+      if (show) {
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      } else {
+        modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+    }
+
+    // Escape listener bounds
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') toggleAboutModal(false);
+    });
+  </script>
+</body>
+</html>
