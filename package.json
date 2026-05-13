@@ -1,0 +1,16 @@
+{
+  "name": "company_website",
+  "version": "1.0.0",
+  "description": "Corporate Enterprise Portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d frontend"
+  },
+  "keywords": [],
+  "author": "Parikshith Shivaprakash",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
